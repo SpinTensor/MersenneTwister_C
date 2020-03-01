@@ -291,11 +291,11 @@ rng_int_type restore_rng_state_int(char* intstate){
    }
    
    intstate += 2;
-   sscanf(intstate, " %8x %8x", &rng_int.seed, &rng_int.mtidx);
+   sscanf(intstate, " %8x %8x", (unsigned int*) &rng_int.seed, (unsigned int*) &rng_int.mtidx);
    intstate += 18;
 
    for (int i = 0; i<MTSTATESIZE; i++){
-      sscanf(intstate, "%17lx", &rng_int.mtstate[i]);
+      sscanf(intstate, "%17lx", (unsigned long*) &rng_int.mtstate[i]);
       intstate += 17;
    } 
 
