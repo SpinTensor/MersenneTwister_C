@@ -1,8 +1,4 @@
-CC = gcc
-
-CCFLAGS = -O3 -g 
-
-CCWFLAGS = -Wall -Wextra -Wpedantic
+include Make.include
 
 OUTLIB = ./MT_random.a
 

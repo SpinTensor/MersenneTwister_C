@@ -1,0 +1,10 @@
+############
+# COMPILER #
+############
+
+# C-Compiler
+   CC = gcc
+   CCFLAGS = -O3 -g -std=c99 -fmax-errors=3
+   CCWFLAGS = -Wall -Wextra
+
+
