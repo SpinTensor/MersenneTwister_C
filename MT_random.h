@@ -8,7 +8,7 @@
    //    arbritrarily many independend streams.
    // Usage:
    //    Import this header:
-   //       #import "random.h"
+   //       #include "MD_random.h"
    //    Define a variable to hold the RNG state for uniform random numbers:
    //       rng_uniform_type rng_stateu
    //    For gaussian random numbers:
